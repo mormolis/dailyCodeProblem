@@ -42,24 +42,24 @@ public class ReursionTest {
     }
 
     @Test
-    public void arraySumTest(){
-        assertThat(Recursion.arraySum(new int[]{1,2,3,4}, 4), equalTo(10));
-        assertThat(Recursion.arraySum(new int[]{1,2,3,4,10}, 5), equalTo(20));
+    public void arraySumTest() {
+        assertThat(Recursion.arraySum(new int[]{1, 2, 3, 4}, 4), equalTo(10));
+        assertThat(Recursion.arraySum(new int[]{1, 2, 3, 4, 10}, 5), equalTo(20));
     }
 
     @Test
-    public void isPalindromeTest(){
-        assertTrue(Recursion.isPalindrome(new char[]{'a','b','c','c','b','a'}, 6));
-        assertFalse(Recursion.isPalindrome(new char[]{'a','b','c','c','d','a'}, 6));
-        assertFalse(Recursion.isPalindrome(new char[]{'a','b','c','c','d'}, 5));
-        assertTrue(Recursion.isPalindrome(new char[]{'a','b','c','b','a'}, 5));
-        assertFalse(Recursion.isPalindrome(new char[]{'a','b','c','c','a'}, 5));
+    public void isPalindromeTest() {
+        assertTrue(Recursion.isPalindrome(new char[]{'a', 'b', 'c', 'c', 'b', 'a'}, 6));
+        assertFalse(Recursion.isPalindrome(new char[]{'a', 'b', 'c', 'c', 'd', 'a'}, 6));
+        assertFalse(Recursion.isPalindrome(new char[]{'a', 'b', 'c', 'c', 'd'}, 5));
+        assertTrue(Recursion.isPalindrome(new char[]{'a', 'b', 'c', 'b', 'a'}, 5));
+        assertFalse(Recursion.isPalindrome(new char[]{'a', 'b', 'c', 'c', 'a'}, 5));
     }
 
     @Test
     public void binSearchTest() {
-        assertTrue(Recursion.binSearch(new int[]{1,2,3,4,5,6,7,8}, 8,6));
-        assertFalse(Recursion.binSearch(new int[]{1,2,3,4,5,6,7,8}, 8,10));
+        assertTrue(Recursion.binSearch(new int[]{1, 2, 3, 4, 5, 6, 7, 8}, 8, 6));
+        assertFalse(Recursion.binSearch(new int[]{1, 2, 3, 4, 5, 6, 7, 8}, 8, 10));
     }
-
+    
 }
