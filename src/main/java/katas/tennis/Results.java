@@ -84,4 +84,16 @@ public class Results {
     public int hashCode() {
         return Objects.hash(status, playerOneName, playerTwoName, playerOneScore, playerTwoScore, winner);
     }
+
+    @Override
+    public String toString() {
+        return "Results{" +
+                "status=" + status +
+                ", playerOneName='" + playerOneName + '\'' +
+                ", playerTwoName='" + playerTwoName + '\'' +
+                ", playerOneScore=" + playerOneScore +
+                ", playerTwoScore=" + playerTwoScore +
+                ", winner='" + winner + '\'' +
+                '}';
+    }
 }

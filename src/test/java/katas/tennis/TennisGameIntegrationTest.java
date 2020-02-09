@@ -31,8 +31,10 @@ public class TennisGameIntegrationTest {
         player1.winsRound();
         player2.winsRound();
         player1.winsRound();
+        Results expected = new Results(Status.FINISHED, "PlayerOne", "PlayerTwo", Score.FORTY, Score.FIFTEEN);
+        expected.setWinner("PlayerOne");
 
-        assertThat(tennisGame.calculateResults(), equalTo(new Results(Status.FINISHED, "PlayerOne", "PlayerTwo", Score.FORTY, Score.FIFTEEN)));
+        assertThat(tennisGame.calculateResults(), equalTo(expected));
     }
 
     @Test
